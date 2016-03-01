@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auckland Clojure - Om-next</title>
+    <link type="text/css" rel="stylesheet" href="css/reveal.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reveal-theme.css"/>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>Intro to om-next</h2>
+                <p>And figwheel / devcards</p>
+            </section>
+            <section>
+                <h3>Who am I ?!</h3>
+                <p>Developer, here (liveops), doing automated testing stuff</p>
+                <p>We only get to do cljs in our spare time atm</p>
+            </section>
+            <section>
+                <h3>What's figwheel?</h3>
+                <p>A cljs library for hot code loading</p>
+                <p>The magic is it keeps app state between reloads</p>
+                <p>Great with any app that keeps it's state in one place</p>
+            </section>
+            <section>
+                <h3>What's devcards?</h3>
+                <p>Put all your app's states on one page</p>
+                <p>Let's you get started and experiment way quicker</p>
+                <p>Great for testers, stakeholders etc.</p>
+            </section>
+            <section>
+                <p>Both of these can work outside the cljs ecosystem</p>
+                <p>... but they're less useful, and more finnickity.</p>
+            </section>
+
+            <section>
+                <h3>Assumed knowledge</h3>
+                <p>Know what react is, and have an idea of how it works</p>
+            </section>
+
+            <section>
+                <h3>A bit of history</h3>
+                <p>Why not om.now?</p>
+            </section>
+
+            <section>
+                <p>Cursors are hard</p>
+                <p>Also, other people made shiny things</p>
+            </section>
+
+            <section>
+                <h3>Relay</h3>
+                <p>Query colocation</p>
+                <p>GraphQL</p>
+            </section>
+
+            <section>
+                <h3>Falcor</h3>
+                <p>Identity / normalization</p>
+                <p>Routing on the client</p>
+            </section>
+
+            <section>
+                <p>These ideas are synthesized with the parser</p>
+                <p>Which is mostly what we're going to be playing with for the structured part of tonight</p>
+            </section>
+
+            <section>
+                <h3>What is the parser?</h3>
+                <p>Responsible for pulling apart your query</p>
+                <p>You get to write your own!</p>
+                <p>But you might not want to</p>
+            </section>
+
+            <section>
+                <h3>Database and normalization</h3>
+                <p>Om has opinions about state</p>
+                <p>Keep data in a normalized form (idents)</p>
+            </section>
+
+            <section>
+                <h3>Reconciler? Whut?</h3>
+                <p>Part through which all state flows</p>
+                <p>Contains state, parser and remotes</p>
+            </section>
+
+            <section>
+                <p>There's a lot of stuff I've glossed over or elided</p>
+                <p>It's still early days yet, things are subject to change</p>
+                <p>APIs are still rough and unfinished</p>
+            </section>
+
+            <section>
+                <p>Questions?</p>
+            </section>
+
+            <section>
+                <a href="https://github.com/lfn3/akl-clj-om-next">https://github.com/lfn3/akl-clj-om-next</a>
+            </section>
+
+            <section>
+                <p>Slack Channel: <a href="http://clojurians.net/">http://clojurians.net/</a></p>
+                <p>#clojure-new-zealand</p>
+                <p>#om</p>
+            </section>
+        </div>
+    </div>
+
+
+<script src="reveal.js"></script>
+<script>
+    Reveal.initialize();
+</script>
+</body>
+</html>
